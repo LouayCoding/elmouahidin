@@ -86,6 +86,16 @@ export default function VacaturesPage() {
           compact
         />
 
+        {/* Publication Date */}
+        <Section background="transparent" maxWidth="xl" padding="sm">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="font-poppins text-sm font-medium" 
+               style={{ color: 'var(--foreground)', opacity: 0.6 }}>
+              Gepubliceerd op 20 mei 2025
+            </p>
+          </div>
+        </Section>
+
         {/* Job Overview */}
         <Section background="transparent" maxWidth="xl" padding="md">
           <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
