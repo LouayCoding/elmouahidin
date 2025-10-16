@@ -23,8 +23,7 @@ export default function OnzeStichtingPage() {
     { name: "Adil Taheri", position: "Secretaris" },
     { name: "Rabie Zarrou", position: "Penningmeester" },
     { name: "Chaib El Ousrouti", position: "Vice-penningmeester" },
-    { name: "Ahmed Itayibi", position: "Algemeen bestuurslid" },
-    { name: "Jamal Achbouk", position: "Algemeen bestuurslid" }
+    { name: "Ahmed Itayibi", position: "Algemeen bestuurslid" }
   ]
 
   return (
