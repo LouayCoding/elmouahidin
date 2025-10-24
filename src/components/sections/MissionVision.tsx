@@ -182,7 +182,7 @@ export function MissionVision() {
                     transition: { duration: 0.3 }
                   }}
                 >
-                  <div className="mb-4" style={{ color: '#C4A484' }}>{value.icon}</div>
+                  <div className="flex justify-center mb-4" style={{ color: '#C4A484' }}>{value.icon}</div>
                   <h4 className="font-marcellus text-lg font-medium mb-3" 
                       style={{ color: 'var(--foreground)' }}>
                     {value.title}
