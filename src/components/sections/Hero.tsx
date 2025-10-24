@@ -120,7 +120,7 @@ export function Hero() {
                   transition: { duration: 0.3 }
                 }}
               >
-                <div style={{ color: '#C4A484' }}>
+                <div className="flex justify-center" style={{ color: '#C4A484' }}>
                   {service.icon}
                 </div>
                 <h3 className="font-marcellus text-lg font-medium" 
