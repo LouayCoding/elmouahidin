@@ -135,7 +135,49 @@ export default function OnzeStichtingPage() {
             subtitle="Transparantie en verantwoording over onze financiën"
           />
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Jaarrekening 2024 - Nieuwste */}
+            <a 
+              href="/documents/Jaarrekening 2024.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-6 rounded-2xl transition-all duration-300 hover:scale-[1.02] group"
+              style={{ 
+                backgroundColor: 'var(--card)',
+                border: '2px solid #C4A484'
+              }}
+            >
+              <div className="flex items-center gap-4">
+                <div className="p-3 rounded-xl" style={{ backgroundColor: '#C4A484', color: 'white' }}>
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-1">
+                    <h3 className="font-marcellus text-lg font-light" 
+                        style={{ color: 'var(--foreground)' }}>
+                      Jaarrekening 2024
+                    </h3>
+                    <span className="px-2 py-1 text-xs font-medium rounded-full" 
+                          style={{ backgroundColor: '#C4A484', color: 'white' }}>
+                      NIEUW
+                    </span>
+                  </div>
+                  <p className="font-poppins text-sm font-light" 
+                     style={{ color: 'var(--foreground)', opacity: 0.7 }}>
+                    Financiële jaarrekening 2024
+                  </p>
+                </div>
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#C4A484' }}>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+
+            {/* Jaarverslag 2023 */}
             <a 
               href="/documents/jaarverslag-2023-stichting-el-mouahidin.pdf"
               target="_blank"
@@ -160,40 +202,6 @@ export default function OnzeStichtingPage() {
                   <p className="font-poppins text-sm font-light" 
                      style={{ color: 'var(--foreground)', opacity: 0.7 }}>
                     Financieel overzicht 2023
-                  </p>
-                </div>
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#C4A484' }}>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </div>
-              </div>
-            </a>
-
-            <a 
-              href="/documents/jaarverslag-2022-stichting-el-mouahidin.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-6 rounded-2xl transition-all duration-300 hover:scale-[1.02] group"
-              style={{ 
-                backgroundColor: 'var(--card)',
-                border: '1px solid var(--border)'
-              }}
-            >
-              <div className="flex items-center gap-4">
-                <div className="p-3 rounded-xl" style={{ backgroundColor: '#C4A484', color: 'white' }}>
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                  </svg>
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-marcellus text-lg font-light mb-1" 
-                      style={{ color: 'var(--foreground)' }}>
-                    Jaarverslag 2022
-                  </h3>
-                  <p className="font-poppins text-sm font-light" 
-                     style={{ color: 'var(--foreground)', opacity: 0.7 }}>
-                    Financieel overzicht 2022
                   </p>
                 </div>
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity">
