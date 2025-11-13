@@ -135,7 +135,7 @@ export default function OnzeStichtingPage() {
             subtitle="Transparantie en verantwoording over onze financiën"
           />
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Jaarrekening 2024 - Nieuwste */}
             <a 
               href="/documents/Jaarrekening 2024.pdf"
