@@ -7,7 +7,14 @@ export async function GET() {
     const currentTimes = getCurrentPrayerTimes();
     
     if (!currentTimes) {
-      throw new Error('Could not get current prayer times');
+      console.error('Prayer times not available for current date');
+      return NextResponse.json(
+        { 
+          error: 'Gebedstijden niet beschikbaar', 
+          message: 'Gebedstijden voor de huidige datum zijn niet beschikbaar. Probeer het later opnieuw.' 
+        },
+        { status: 404 }
+      );
     }
 
     // Get current date in Dutch timezone (Europe/Amsterdam)
@@ -45,9 +52,13 @@ export async function GET() {
   } catch (error) {
     console.error('Error loading prayer times:', error)
     
-    // Return error response
+    // Return detailed error response
     return NextResponse.json(
-      { error: 'Kon gebedstijden niet laden' },
+      { 
+        error: 'Fout bij laden gebedstijden',
+        message: 'Er is een technische fout opgetreden bij het laden van de gebedstijden. Probeer het later opnieuw.',
+        details: error instanceof Error ? error.message : 'Onbekende fout'
+      },
       { status: 500 }
     )
   }
